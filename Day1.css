@@ -1,0 +1,11 @@
+.external_class {
+  color: blueviolet;
+}
+.div1 {
+  font-size: 50px;
+  margin-left: 600px;
+  border: 2px solid red;
+  width: 250px;
+  padding-bottom: 50px;
+  text-align: center;
+}

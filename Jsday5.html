@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+////////////////////////////////////////////////////////////////
+
+      function showAlert(){
+      alert("this is first button alert")
+      }
+      function showAlert(){
+      alert("this is first button alert")
+      }
+
+////////////////////////////////////////////////////////////////
+
+      //(This is pop method of an array)//
+
+      let arr=[1,2,3,4,5,6,7,8,9,10]
+      console.log(arr.pop())
+      console.log(arr.pop())
+      console.log(arr.pop())
+      console.log(arr.pop())
+      console.log(arr)
+
+////////////////////////////////////////////////////////////////
+      
+      //(This is push method of an array)//
+
+      let arr1=[1,2,3,4,5,6,7,8]
+      arr1.push(100)
+      console.log(arr1)
+
+////////////////////////////////////////////////////////////////
+      
+      //this is array(3)shift//
+
+      let arr3=[1,2,3,4,5,6,7,8,9]
+      console.log(arr3.shift())
+
+////////////////////////////////////////////////////////////////
+      
+      //this is array(4)unshift//
+
+      let arr4=[1,2,3,4,5,6,7,8,9.10,11]
+      arr4.unshift(0)
+
+////////////////////////////////////////////////////////////////
+      
+      //this is pop &push//
+      let arr5=[1,2,3,4,5,6,7,8,9,10]
+      arr5.pop()
+      arr5.pop()
+      arr5.pop()
+      arr5.push(11)
+      console.log(arr5)
+
+////////////////////////////////////////////////////////////////
+      
+      //this is shift & unshift//
+
+      let arr6=[1,2,3,4,5,6,7,8,9,10]
+      arr6.shift()
+      arr6.shift()
+      arr6.shift()
+      arr6.unshift(22)
+      console.log(arr6)
+
+////////////////////////////////////////////////////////////////
+
+      let data=["hello",true,false,"jarvis",23569874]
+      data.pop()
+      data.pop()
+      data.pop()
+      data.push("jarvis")
+      data.shift()
+      console.log(data)
+
+////////////////////////////////////////////////////////////////
+
+      let data1=["hello",true,false,"jarvis",23569874]
+      console.log(data1.pop())
+
+////////////////////////////////////////////////////////////////
+
+      function getArray(arr) {
+        arr.pop();
+        return arr;
+      }
+      console.log(getArray([1, 2, 3, 4, 5]));
+
+////////////////////////////////////////////////////////////////
+
+      let arr7=[]
+      for(let i=0;i<=10;i++){
+      arr.push(i)
+      }
+      console.log(arr7)
+
+////////////////////////////////////////////////////////////////
+
+      function getArray(a) {
+        let arr = [];
+        for (let m = 1; m <= 10; m++) {
+          arr.push(m * a);
+        }
+        return arr;
+      }
+      console.log(gatArray(10));
+
+////////////////////////////////////////////////////////////////
+      
+      //(This is slice method of an array)//
+
+      let arr8 = [
+        "pinapple",
+        "apple",
+        "ornage",
+        "kiwi",
+        "banana",
+        "mango",
+        "dragon fruit",
+      ];
+      arr8.pop();
+      arr8.pop();
+      console.log(arr8);
+
+////////////////////////////////////////////////////////////////
+    </script>
+  </head>
+  <body>
+///////////////////////////////////////////////////////////
+
+    <button onmouseenter="showAlert()">Click me</button>
+
+    <button onclick="showAlert()">Click me</button>
+
+///////////////////////////////////////////////////////////    
+  </body>
+</html>

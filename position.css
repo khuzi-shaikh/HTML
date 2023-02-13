@@ -1,0 +1,181 @@
+.main{
+    height: 400px;
+    width: 400px;
+    border: 3px solid  black;
+    background-color: black;
+    margin-left: 500px;
+    position: relative;
+}
+.child1{
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    background-color: red;
+    position: absolute;
+    top: 140px;
+    left: 140px;
+}
+.child2{
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    background-color: green;
+    position: absolute;
+    top: 140px;
+    right: 140px;
+}
+.child3{
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    background-color: blue;
+    position: absolute;
+    bottom: 140px;
+    left: 140px;
+
+}
+.child4{
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    background-color: peru;
+    position: absolute;
+    bottom: 140px;
+    right: 140px;
+}
+.A{
+    height: 600px;
+    width: 600px;
+    border: 5px solid black ; 
+    background-color: black;
+    margin-left: 450px;
+    position: relative;
+}
+.a{
+    height: 60px;
+    width: 60px;
+    border: 5px solid springgreen;
+    background-color: springgreen;
+    position: absolute;
+
+}
+.b{
+    height: 60px;
+    width: 60px;
+    border: 5px solid red;
+    background-color: red;
+    position: absolute;
+    top: 530px;
+}
+.c{
+    height: 60px;
+    width: 60px;
+    border: 5px solid brown;
+    background-color: brown;
+    position: absolute;
+    bottom: 200px;
+}
+.d{
+    height: 60px;
+    width: 60px;
+    border: 5px solid blue;
+    background-color: blue;
+}
+.sticky1{
+    width: 1000px;
+    height: 1000px;
+    background-color: black;
+}
+.a1{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: sticky;
+    top: 10px;
+}
+.sticky2{
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+}
+.a2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    top: 10px;
+}
+.sticky3{
+    width: 1000px;
+    height: 1000px;
+    background-color: green;
+}
+.a3{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    top: 10px;
+}
+.sticky4{
+    width: 1000px;
+    height: 1000px;
+    background-color: orange;
+}
+.a4{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    top: 10px;
+}
+.stickyA{
+    height: 600px;
+    width: 600px;
+    background-color: black;
+}
+.aa{
+    height: 70px;
+    width: 70px;
+    background-color: blue;
+    position: sticky;
+    top: 0px;
+}
+.stickyB{
+    height: 600px;
+    width: 600px;
+    background-color: blue;
+}
+.bb{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    position: sticky;
+    left: 80px;
+}
+.stickyC{
+    height: 600px;
+    width: 600px;
+    background-color: tan;
+}
+.cc{
+    height: 70px;
+    width: 70px;
+    background-color: black;
+}
+.stickyD{
+    height: 600px;
+    width: 600px;
+    background-color: black;
+}
+.dd{
+    height: 70px;
+    width: 70px;
+    background-color: tan;
+}
+.fix{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: blue;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}

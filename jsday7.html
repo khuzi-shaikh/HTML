@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      ///////////////////////this is filter method in array of object/////////////////////////////
+          let arr=[
+          {empID:1,empCity:"navapur",empName:"khuzi",empAge:23},
+          {empID:2,empCity:"surat",empName:"sufiyan",empAge:25},
+          {empID:3,empCity:"pune",empName:"akhtar",empAge:24},
+          {empID:4,empCity:"nanded",empName:"arsalan sir",empAge:26},
+          {empID:5,empCity:"mumbai",empName:"abubakar",empAge:20},
+      ]
+      let feltData=arr.filter((item)=>item.empCity=="pune" && item.empName=="akhtar")
+      console.log(feltData);
+      ///////////////////////this is forEach method///////////////////////////////////////////////
+          let arr2=[
+          {empID:1,empCity:"navapur",empName:"khuzi",empAge:23},
+          {empID:2,empCity:"surat",empName:"sufiyan",empAge:25},
+          {empID:3,empCity:"pune",empName:"akhtar",empAge:24},
+          {empID:4,empCity:"nanded",empName:"arsalan sir",empAge:26},
+          {empID:5,empCity:"mumbai",empName:"abubakar",empAge:20},
+      ]
+      let feltData2=arr2.forEach((item)=>console.log(item.empName))
+      /////////////////////////////////////////////////////////////this is forEach method for addition
+      let arr3=[1,2,3,4,5]
+      let value=0
+      let addData=arr3.forEach((item)=>  value+=item)
+      console.log(value)
+      ////////////////////this is map method////////////////////////////////////////////////////
+      let arr4=[
+          {empID:1,empCity:"navapur",empName:"khuzi",empAge:23},
+          {empID:2,empCity:"surat",empName:"sufiyan",empAge:25},
+          {empID:3,empCity:"pune",empName:"akhtar",empAge:24},
+          {empID:4,empCity:"nanded",empName:"arsalan sir",empAge:26},
+          {empID:5,empCity:"mumbai",empName:"abubakar",empAge:20},
+      ]
+      let feltData3=arr4.map((item)=>console.log(item.empName))
+      /////////////////////////////////////////////////////////////
+        let arr5 = [
+          { name: "realme", quantity: 3, price: 20000 },
+          { name: "mi", quantity: 6, price: 15000 },
+          { name: "oneplus", quantity: 8, price: 25000 },
+          { name: "iphone", quantity: 10, price: 50000 },
+        ];
+        let total = 0;
+        arr5.forEach((item) => {
+          total += item.quantity * item.price;
+        });
+        console.log(total);
+        /////////////////////////////////////////////////////////////
+        let arr6 = [
+          { name: "realme", quantity: 3, price: 20000 },
+          { name: "mi", quantity: 6, price: 15000 },
+          { name: "oneplus", quantity: 8, price: 25000 },
+          { name: "iphone", quantity: 10, price: 50000 },
+        ];
+        arr6.reduce(() => {});
+      ////////////////////////////////this is foreach & map method of an array/////////////////////////////////////////////
+        const arr7=[2,4,5,6,7,8]
+        console.log(arr7.map((item)=>item+1));
+        arr7.forEach((item)=>console.log(item+1))
+        console.log(arr7.forEach((item)=>item+1))
+      ///////////////////////////////////////this is sort method of an array//////////////////////////////////////////////
+      let arr8=[2,3,4,7,8,1,0,9,5]
+      let sortArray=arr8.sort()
+      console.log(sortArray)
+      let arr9=[2,3,4,7,8,1,0,9,5]
+      let sortArray1=arr9.sort((a,b)=>a<b?1:-1)
+      console.log(sortArray1)
+      /////////////////////////////////////////this is reverse,split & join method of an array///////////////////////////
+      const arr10="apple"
+      console.log(arr10.split("").reverse().join(""));
+      ////////////////////////////this is concat method of an array/////////////////////////////////
+        const arr11=[0,1,2,3,4,5]
+        const arr12=[6,7,8,9,10]
+        const result=arr11.concat(arr12)
+        console.log(result);
+      ////////////////////////////this is flat method of an array/////////////////////////////////////////
+      const arr13=[0,1,2,3,4,5,[6,7,8,9,10,[11,12,13,14,15]]]
+      console.log(arr13.flat(Infinity));
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+        ////////////////////////////////////////////////////This is pop
+        let arr = [1, 2, 5, 6, 4, 7, 8, 9];
+        arr.pop();
+        arr.pop();
+        console.log(arr);
+        ////////////////////////////////////////////////////This is push
+        let arr2 = [1, 2, 5, 6, 4, 7, 8, 9];
+        arr2.push("hello world");
+        arr2.push(10);
+        console.log(arr2);
+        ///////////////////////////////////////////////////This is shift
+        let arr3 = [1, 2, 5, 6, 4, 7, 8, 9];
+        arr3.shift();
+        arr3.shift();
+        console.log(arr3);
+        ///////////////////////////////////////////////////This is unshift
+        let arr4 = [1, 2, 5, 6, 4, 7, 8, 9];
+        arr4.unshift(0);
+        arr4.unshift(-1);
+        console.log(arr4);
+        //////////////////////////////////////////////////This is slice
+        let arr5 = [1, 2, 5, 6, 4, 7, 8, 9];
+        let copyarr = arr5.slice(2, 7);
+        let copyarr1 = arr5.slice(0, 4);
+        console.log(copyarr);
+        console.log(copyarr1);
+        //////////////////////////////////////////////////This is Splice
+        let arr6 = [1, 2, 5, 6, 4, 7, 8, 9];
+        let copyarr6 = arr6.splice(4, 2, "hello world");
+        console.log(copyarr6);
+        console.log(arr6);
+        //////////////////////////////////////////////////This is filter
+        let arr7 = ["india", "turkey", "morocco", "UAE", "indonesia", "russia","russia","russia","russia","russia","russia"];
+        let fltrCountry = arr7.filter((elmt) => elmt == "UAE");
+        console.log(fltrCountry);
+        let fltrCountry1 = arr7.filter((elmt)=>elmt!="russia")
+        console.log(fltrCountry1);
+        /////////////////////////////////////////////////This is filter in array of object
+        let arr8=[
+        {name:"khuzi",age:23,city:"navapur"},
+        {name:"yusuf",age:30,city:"chinchpada"},
+        {name:"ibrahim",age:27,city:"visarwadi"},
+        {name:"sufiyan",age:25,city:"navapur"},
+      ]
+      let fltrData1=arr8.filter((item)=>console.log(item.name))
+        //////////////////////////////////////////////////This is find
+        let arr9 = ["india", "turkey", "morocco", "UAE", "indonesia"];
+        let findCountry = arr9.find((elmt)=>elmt=="morocco")
+        console.log(findCountry);
+        //////////////////////////////////////////////////This is reduce
+        let arr10 = [31,9]
+        let reduceNum=arr10.reduce((acc,cur)=>acc+cur)
+        console.log(reduceNum);
+        let reduceNum1 = arr10.reduce((acc,cur)=>acc-cur)
+        console.log(reduceNum1);
+        let reduceNum2 = arr10.reduce((acc,cur)=>acc/cur)
+        console.log(reduceNum2);
+        let reduceNum3 = arr10.reduce((acc,cur)=>acc*cur)
+        console.log(reduceNum3);
+        //////////////////////////////////////////////////This is forEach
+        let arr11=[
+        {city:"pune",pinCode:411048,food:"campBurger"},
+        {city:"mumbai",pinCode:400001,food:"vadaPaav"},
+        {city:"surat",pinCode:335009,food:"khavse"},
+        {city:"nandurbar",pinCode:425412,food:"seekhPaav"}     
+      ]
+      let fltrCity=arr11.forEach((item)=>console.log(item.food))
+      //////////////////////////////////////////////////////////////////This is concat
+      const arr12=[1,2,3,4,5,6]
+      const arr13=["a","b","c","d"]
+      const arr14=["pune","mumbai"]
+      const result=arr12.concat(arr13,arr14)
+      console.log(result);
+      /////////////////////////////////////////////////////////////////convert string into number in reduce method
+      let arr15 = "9767744766"
+        let reduceNum15=arr15.reduce((acc,cur)=>Number (acc+cur))
+        console.log(reduceNum15);
+    </script>
+  </head>
+  <body></body>
+</html>
+ 

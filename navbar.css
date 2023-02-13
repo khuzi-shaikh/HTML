@@ -1,0 +1,31 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.main_container {
+  background-color: black;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo_container h3 {
+  color: #fff;
+  font-size: 30px;
+  margin-left: 20px;
+}
+.link_container ul li {
+  display: inline;
+  margin: 40px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.main_container ul li:hover a {
+  color: red;
+}
+.logo_container:hover h3{
+    color: blue;
+}
